@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/zhangda89/node-expat.git"
+    "url": "git+https://github.com/zhangda89/node-expat.git"
   },
   "keywords": [
     "xml",
