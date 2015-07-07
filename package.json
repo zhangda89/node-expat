@@ -1,18 +1,14 @@
 {
-  "name": "node-expat",
-  "version": "2.3.8",
-  "main": "./lib/node-expat",
-  "description": "NodeJS binding for fast XML parsing.",
-  "keywords": [
-    "xml",
-    "sax",
-    "expat",
-    "libexpat",
-    "parse",
-    "parsing"
-  ],
+  "name": "node-expat-gowhich",
+  "version": "1.0.0",
+  "description": "通过nodejs快速解析xml",
+  "main": "bench.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
-    "test": "vows --spec ./test/**/*.js"
+    "test": "vows --spec ./test/**/*.js",
+    "install": "node-gyp rebuild"
   },
   "dependencies": {
     "bindings": "~1.2.1",
@@ -25,14 +21,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/node-xmpp/node-expat.git"
+    "url": "git://github.com/zhangda89/node-expat.git"
   },
-  "homepage": "http://node-xmpp.github.io/doc/nodeexpat.html",
-  "bugs": "https://github.com/node-xmpp/node-expat/issues",
+  "keywords": [
+    "xml",
+    "sax",
+    "expat",
+    "libexpat",
+    "parse",
+    "parsing"
+  ],
   "author": {
-    "name": "Astro",
-    "email": "astro@spaceboyz.net",
-    "web": "http://spaceboyz.net/~astro/"
+    "name": "Durban",
+    "email": "zhangdapeng89@126.com",
+    "web": "http://www.gowhich.com"
   },
   "maintainers": [
     {
@@ -56,12 +58,13 @@
     "Nathan Rajlich",
     "Julien Genestoux"
   ],
-  "licenses": [
-    {
-      "type": "MIT"
-    }
-  ],
+  "license": "MIT",
+  "gypfile": true,
+  "bugs": {
+    "url": "https://github.com/zhangda89/node-expat/issues"
+  },
   "engines": {
-    "node": ">=0.8"
+    "node": ">=0.12.4"
   }
+  "homepage": "https://github.com/zhangda89/node-expat#readme"
 }
